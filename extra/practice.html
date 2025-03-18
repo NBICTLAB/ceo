@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JavaScript Practice</title>
+    <script src="practice.js"></script>
+    <style>
+        div#box1 {
+            background: #9DCEFF;
+            width: 400px;
+            height: 200px;
+        }
+    </style>
+    <script>
+        function changeBG(el, clr) {
+            elem = document.getElementById(el);
+            elem.style.transition = "background 1s linear 0s";
+            elem.style.background = clr;
+        }
+    </script>
+</head>
+
+<body>
+    <button onclick="changeBG('box1', '#F0F')">Magenta</button>
+    <div id="box1">
+        The sample texts will go here...
+        I am Sadhan Verma and I am back.
+    </div>
+</body>
+
+</html>
